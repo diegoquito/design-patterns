@@ -1,0 +1,12 @@
+﻿
+Suppose we have a Pizza class that represents a pizza, 
+and we want to add different toppings to it dynamically without modifying the Pizza class. 
+We can use the Decorator pattern to add new behavior to our Pizza class without changing its structure.
+
+1) First, we create an IPizza interface that defines the basic functionality of a pizza.
+2) Next, we create the PizzaBase class, which implements the IPizza interface.
+3) Now, we create an abstract PizzaDecorator class that also implements the IPizza interface and contains a reference to another instance of IPizza.
+4) Then, we create different classes that inherit from PizzaDecorator and add functionality to the pizza, 
+   such as the MushroomDecorator class, CheeseDecorator class, etc, that adds mushrooms, cheeese to the pizza.
+
+5) Now, we can create different types of pizzas and add ingredients to them dynamically.
