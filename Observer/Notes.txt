@@ -1,0 +1,15 @@
+
+1) Suppose we have a news notification system that sends notifications to different watchers when a new news is published. 
+   To implement the Observer pattern, we first create an IObservable interface that defines the methods needed to add and remove observers.
+
+2) Next, we create a NewsPublisher class that implements the IObservable interface and maintains a list of registered observers.
+
+3) Now, we create an IObserver interface that defines the Update method that will be called by the observable object when a new news item is posted.
+
+4) Then, we create different classes that implement the IObserver interface, such as the EmailNotificationService class that sends email notifications.
+
+5) Now we can create a NewsPublisher instance, add different observers and publish news. 
+   Observers will be automatically notified when a new news item is published.
+
+
+
