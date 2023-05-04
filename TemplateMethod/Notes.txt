@@ -1,0 +1,13 @@
+﻿
+Suppose we have a Report class that generates different types of reports (e.g. sales reports, financial reports, marketing reports, etc.). 
+To implement the Template Method pattern:
+
+1) We create an abstract base class ReportTemplate that defines the basic skeleton of the report 
+and leaves some abstract methods to be implemented by the report-specific subclasses.
+
+2) Then, We create different subclasses that inherit from ReportTemplate and implement the abstract methods 
+according to the specific type of report we want to generate. 
+For example, here we have a SalesReport subclass that generates sales reports
+
+3) Finally, we can create an instance of the report subclass we want to generate 
+and call the GenerateReport() method to generate the complete report.
